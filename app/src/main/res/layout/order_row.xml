@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/orderRowImg"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/orderReceivedImg"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_submit"
+                app:layout_constraintBottom_toBottomOf="@+id/orderReceivedTxt"
+                app:layout_constraintStart_toEndOf="@+id/orderRowImg"
+                app:layout_constraintTop_toTopOf="@+id/orderReceivedTxt"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/orderReceivedTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Order received"
+                android:textColor="@color/in_stock_text"
+                app:layout_constraintBottom_toTopOf="@+id/orderRowTitleTxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/orderReceivedImg"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/orderRowTitleTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="title"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/orderRowPriceTxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/orderRowImg"
+                app:layout_constraintTop_toBottomOf="@+id/orderReceivedTxt"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/orderRowPriceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="200$"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/in_stock_text"
+                app:layout_constraintBottom_toTopOf="@+id/orderRowProfitTxt"
+                app:layout_constraintEnd_toStartOf="@+id/orderRowNonDiscountPriceTxt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/orderRowImg"
+                app:layout_constraintTop_toBottomOf="@+id/orderRowTitleTxt"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/orderRowNonDiscountPriceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="249,95"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:textColor="@color/low_stock_text"
+                app:layout_constraintBottom_toBottomOf="@+id/orderRowPriceTxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/orderRowPriceTxt"
+                app:layout_constraintTop_toTopOf="@+id/orderRowPriceTxt"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/orderRowProfitTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Your profit: 49,95$"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/orderRowImg"
+                app:layout_constraintTop_toBottomOf="@+id/orderRowPriceTxt"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/orderRowQuantityTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Quantity: 5"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/orderRowImg"
+                app:layout_constraintTop_toBottomOf="@id/orderRowTitleTxt"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

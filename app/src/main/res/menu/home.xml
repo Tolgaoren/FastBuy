@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_sort"
+        android:title="Sort"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText">
+    <menu>
+        <item
+            android:id="@+id/sortByNameAsc"
+            android:title="Sort by Name Asc"
+            app:showAsAction="never"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/sortByNameDesc"
+            android:title="Sort by Name Desc"
+            app:showAsAction="never"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/sortByPriceAsc"
+            android:title="Sort by Price Asc"
+            app:showAsAction="never"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/sortByPriceDesc"
+            android:title="Sort by Price Desc"
+            app:showAsAction="never"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/sortByRatingAsc"
+            android:title="Sort by Rating"
+            app:showAsAction="never"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/sortByDiscount"
+            android:title="Sort by Discount"
+            app:showAsAction="never"
+            tools:ignore="HardcodedText" />
+    </menu>
+    </item>
+</menu>

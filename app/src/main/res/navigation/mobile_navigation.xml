@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.toren.producthub.presentation.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.toren.producthub.presentation.categories.CategoriesFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_nav_categories_to_categoryProductsFragment"
+            app:destination="@id/categoryProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_likes"
+        android:name="com.toren.producthub.presentation.likes.LikesFragment"
+        android:label="Likes"
+        tools:layout="@layout/fragment_likes" >
+        <action
+            android:id="@+id/action_nav_likes_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.toren.producthub.presentation.orders.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.toren.producthub.presentation.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_updateProfileFragment"
+            app:destination="@id/updateProfileFragment" />
+        <argument
+            android:name="userResponse"
+            app:argType="com.toren.producthub.domain.model.User"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.toren.producthub.presentation.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_nav_search_to_searchResultFragment"
+            app:destination="@id/searchResultFragment" />
+        <action
+            android:id="@+id/action_nav_search_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.toren.producthub.presentation.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="Product"
+            app:argType="com.toren.producthub.domain.model.Product" />
+        <action
+            android:id="@+id/action_detailFragment_to_orderReceiveFragment"
+            app:destination="@id/orderReceiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryProductsFragment"
+        android:name="com.toren.producthub.presentation.category_products.CategoryProductsFragment"
+        android:label="Category Products"
+        tools:layout="@layout/fragment_category_products" >
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_categoryProductsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.toren.producthub.presentation.search_result.SearchResultFragment"
+        android:label="Results"
+        tools:layout="@layout/fragment_search_result" >
+        <argument
+            android:name="query"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_searchResultFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderReceiveFragment"
+        android:name="com.toren.producthub.presentation.order_receive.OrderReceiveFragment"
+        android:label="Order"
+        tools:layout="@layout/fragment_order_receive" >
+        <argument
+            android:name="cart"
+            app:argType="com.toren.producthub.domain.model.AddCart" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.toren.producthub.presentation.profile_update.UpdateProfileFragment"
+        android:label="Update Profile"
+        tools:layout="@layout/fragment_update_profile" >
+        <argument
+            android:name="user"
+            app:argType="com.toren.producthub.domain.model.User" />
+        <action
+            android:id="@+id/action_updateProfileFragment_to_nav_profile"
+            app:destination="@id/nav_profile"
+            app:popUpTo="@id/nav_profile"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

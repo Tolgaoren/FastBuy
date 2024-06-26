@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_0">#FFFAFAFA</color>
+    <color name="grey_50">#EDEDED</color>
+    <color name="grey_900">#212121</color>
+    <color name="black_100">#FF121212</color>
+    <color name="low_stock_bg">#FBAEAE</color>
+    <color name="low_stock_text">#930101</color>
+    <color name="in_stock_bg">#A5D6A7</color>
+    <color name="in_stock_text">#1B5E20</color>
+    <color name="shipping_bg">#90CAF9</color>
+    <color name="shipping_text">#0D47A1</color>
+    <color name="warranty_bg">#EDEDED</color>
+    <color name="spacer">#EDEDED</color>
+    <color name="opposite">#212121</color>
+    <color name="star_color">#FFC107</color>
+    <color name="like_color">#FF0000</color>
+    <color name="button_color">#FF7043</color>
+    <color name="buy_now_bg_start">#FFFAFAFA</color>
+    <color name="buy_now_bg_end">#F6F6F6</color>
+    <color name="text_color">#272727</color>
+    <color name="submit_color">#66BB6A</color>
+    <color name="transparent1">#65FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="primary_blue">#118DD0</color>
+    <color name="secondary_orange">#F39F13</color>
+    <color name="discount_color">#D81B47</color>
+</resources>

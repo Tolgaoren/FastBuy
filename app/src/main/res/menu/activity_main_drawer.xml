@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_category"
+            android:title="Categories"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Search"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_likes"
+            android:icon="@drawable/ic_unlike"
+            android:title="Likes"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_fast"
+            android:title="Orders"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/sign_out"
+            android:icon="@drawable/ic_signout"
+            android:title="Sign Out" />
+    </group>
+</menu>

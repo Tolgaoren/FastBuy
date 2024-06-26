@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "317808193384",
+    "project_id": "producthub-79779",
+    "storage_bucket": "producthub-79779.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317808193384:android:56dc4a1040dbcc023d30dd",
+        "android_client_info": {
+          "package_name": "com.toren.producthub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo_tw7zI8qocHU09eEiqKgcYIoZiaK05I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

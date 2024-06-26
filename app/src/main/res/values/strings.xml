@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FastBuy</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
